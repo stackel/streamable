@@ -3,13 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.erikstackelberg.streamable.MainActivity">
 
-    <item android:id="@+id/action_search"
+    <item android:id="@+id/search"
         android:title="@string/search"
         android:icon="@drawable/ic_search"
-        app:showAsAction="ifRoom" />
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+        app:showAsAction="ifRoom"
+        app:actionViewClass="android.widget.SearchView" />
 </menu>
