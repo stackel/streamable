@@ -7,17 +7,17 @@ import java.util.List;
 public class Movie {
 
     @SerializedName("vote_count")
-    private Integer voteCount;
+    private int voteCount;
     @SerializedName("id")
-    private Integer id;
+    private int id;
     @SerializedName("video")
     private Boolean video;
     @SerializedName("vote_average")
-    private Integer voteAverage;
+    private double voteAverage;
     @SerializedName("title")
     private String title;
     @SerializedName("popularity")
-    private Double popularity;
+    private double popularity;
     @SerializedName("poster_path")
     private String posterPath;
     @SerializedName("original_language")
@@ -25,9 +25,9 @@ public class Movie {
     @SerializedName("original_title")
     private String originalTitle;
     @SerializedName("genre_ids")
-    private List<Integer> genreIds = null;
+    private int[] genreIds = null;
     @SerializedName("backdrop_path")
-    private Object backdropPath;
+    private String backdropPath;
     @SerializedName("adult")
     private Boolean adult;
     @SerializedName("overview")
@@ -43,7 +43,7 @@ public class Movie {
         this.voteCount = voteCount;
     }
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
@@ -59,11 +59,11 @@ public class Movie {
         this.video = video;
     }
 
-    public Integer getVoteAverage() {
+    public double getVoteAverage() {
         return voteAverage;
     }
 
-    public void setVoteAverage(Integer voteAverage) {
+    public void setVoteAverage(double voteAverage) {
         this.voteAverage = voteAverage;
     }
 
@@ -75,7 +75,7 @@ public class Movie {
         this.title = title;
     }
 
-    public Double getPopularity() {
+    public double getPopularity() {
         return popularity;
     }
 
@@ -107,11 +107,11 @@ public class Movie {
         this.originalTitle = originalTitle;
     }
 
-    public List<Integer> getGenreIds() {
+    public int[] getGenreIds() {
         return genreIds;
     }
 
-    public void setGenreIds(List<Integer> genreIds) {
+    public void setGenreIds(int[] genreIds) {
         this.genreIds = genreIds;
     }
 
@@ -119,11 +119,11 @@ public class Movie {
         return backdropPath;
     }
 
-    public void setBackdropPath(Object backdropPath) {
+    public void setBackdropPath(String backdropPath) {
         this.backdropPath = backdropPath;
     }
 
-    public Boolean getAdult() {
+    public boolean getAdult() {
         return adult;
     }
 
