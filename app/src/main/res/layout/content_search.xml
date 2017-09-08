@@ -8,4 +8,26 @@
     tools:context="com.erikstackelberg.streamable.SearchActivity"
     tools:showIn="@layout/activity_search">
 
+    <GridView
+        android:id="@+id/search_results_grid_view"
+        android:layout_width="0dp"
+        android:layout_height="495dp"
+        android:columnWidth="100dp"
+        android:numColumns="auto_fit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </GridView>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/search_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+    </ProgressBar>
+
 </android.support.constraint.ConstraintLayout>

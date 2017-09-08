@@ -1,6 +1,11 @@
 package com.erikstackelberg.streamable.models;
 
+import android.databinding.BindingAdapter;
+import android.widget.ImageView;
+
+import com.erikstackelberg.streamable.services.TMDBService;
 import com.google.gson.annotations.SerializedName;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -85,6 +90,10 @@ public class Movie {
 
     public String getPosterPath() {
         return posterPath;
+    }
+
+    public String getFullPosterUrl() {
+        return TMDBService.API_BASE_IMAGE_URL + "w500/" + getPosterPath();
     }
 
     public void setPosterPath(String posterPath) {
